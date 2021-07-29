@@ -5,6 +5,6 @@ public class Main {
     public static void main(String[] args) {
         int number = 25;
         //напишите тут ваш код
-        System.out.println(25*25);
+        System.out.println(number*number);
     }
 }
