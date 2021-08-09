@@ -7,7 +7,7 @@ import java.net.URL;
 public class Main {
     public static void main(String[] args) {
         try {
-            FileInputStream fis = new FileInputStream("C:\\Users\\Trunker\\IdeaProjects\\proxyChecker2\\src\\ip.txt"); // Создаём поток ввода
+            FileInputStream fis = new FileInputStream("C:\\ip.txt"); // Создаём поток ввода
             int i;
             String resultIp = "";
             while ((i = fis.read()) != -1) { // Читаем из файла, в конце фала вернётся -1
@@ -33,7 +33,7 @@ public class Main {
                                 }
                                 System.out.println("Получен ответ, наш ip: " + response);
                                 rd.close();
-                                FileOutputStream fos = new FileOutputStream("C:\\Users\\Trunker\\IdeaProjects\\proxyChecker2\\src\\good_ip.txt", true);
+                                FileOutputStream fos = new FileOutputStream("C:\\good_ip.txt", true);
                                 byte[] buffer = (ip + ":" + port + "\n").getBytes();
                                 fos.write(buffer);
                                 fos.close();
